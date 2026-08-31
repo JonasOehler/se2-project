@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LMSPackage.GuiPackage.LMSController">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="78.0" prefWidth="155.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="createButton" mnemonicParsing="false" onAction="#createUser" prefHeight="30.0" prefWidth="60.0" text="Create" />
+                  <Button fx:id="closeButton" mnemonicParsing="false" onAction="#showUserList" prefHeight="30.0" prefWidth="60.0" text="Show" />
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="idField" alignment="BOTTOM_LEFT" promptText="ID" />
+                  <TextField fx:id="firstNameField" promptText="Firstname" />
+                  <TextField fx:id="lastNameField" promptText="Lastname" />
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <ListView fx:id="listViewUserList" prefHeight="401.0" prefWidth="239.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
